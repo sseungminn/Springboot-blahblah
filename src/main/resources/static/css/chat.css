@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 500px;
+	margin: 0 auto;
+	padding: 25px
+}
+
+.container h1 {
+	text-align: left;
+	padding: 5px 5px 5px 15px;
+	color: #FFBB00;
+	border-left: 3px solid #FFBB00;
+	/* 	margin-bottom: 20px; */
+}
+
+.chating {
+	padding: 5px 0 0 0;
+	background-color: rgb(192, 192, 192);
+	width: 500px;
+	height: 500px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	color: black;
+}
+
+.chating .me {
+	display: inline-block;
+	position: relative;
+	float: right;
+	background-color: yellow;
+	text-align: right;
+	border-radius: 10px;
+}
+
+.myNickname {
+	float: right;
+	text-align: right;
+}
+
+.otherNickname {
+	float: left;
+	text-align: left;
+}
+
+.time_me {
+	height: 7px;
+	color: gray;
+	font-size: 6pt;
+	float: right;
+	text-align: right;
+}
+
+.time_others {
+	height: 7px;
+	color: gray;
+	font-size: 6pt;
+	float: left;
+	text-align: left;
+}
+
+.chating .others {
+	display: inline-block;
+	position: relative;
+	float: left;
+	background-color: white;
+	text-align: center;
+	border-radius: 10px;
+}
+
+textarea {
+	max-width: 470px;
+	min-width: 470px;
+}
+
+input {
+	width: 330px;
+	height: 30px;
+}
+
+#yourMsg {
+	display: none;
+}
+
+.msgImg {
+	width: 200px;
+	height: 125px;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.img {
+	text-align: center;
+}
+
+.chating::-webkit-scrollbar {
+	width: 10px; /* 스크롤바의 너비 */
+}
+
+.chating::-webkit-scrollbar-thumb {
+	height: 5%; /* 스크롤바의 길이 */
+	background: #217af4; /* 스크롤바의 색상 */
+	border-radius: 10px;
+}
+
+.chating::-webkit-scrollbar-track {
+	/*     background: rgba(33, 122, 244, .1);  스크롤바 뒷 배경 색상 */
+	background: rgba(255, 255, 255, .3);
+}

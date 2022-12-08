@@ -1,0 +1,46 @@
+div.addui-input-container {
+	display: block;
+	margin: 0;
+	position: relative;
+	box-sizing: border-box
+}
+
+div.addui-input-container * {
+	box-sizing: border-box
+}
+
+div.addui-input-container input.addui-input-input, div.addui-input-container input.addui-input-input:focus
+	{
+	display: block;
+	width: 100%;
+	background: transparent;
+	border: 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+	top: 32px;
+	outline: none;
+	font-size: 18px;
+	margin: 0;
+	box-shadow: 0 0 0 transparent
+}
+
+div.addui-input-container input.addui-input-input:focus, div.addui-input-container input.addui-input-input:focus:focus
+	{
+	border-bottom: 2px solid #3f51b5
+}
+
+div.addui-input-container div.addui-input-placeholder {
+	display: block;
+	position: absolute;
+	top: 4px;
+	transition: top 0.5s, left 0.5s, font-size 0.5s;
+	color: rgba(0, 0, 0, 0.38);
+	font-size: 16px;
+	pointer-events: none
+}
+
+div.addui-input-container.addui-input-hasValue .addui-input-placeholder,
+	div.addui-input-container input.addui-input-input:focus+div.addui-input-placeholder
+	{
+	top: -12px;
+	font-size: 12px
+}
