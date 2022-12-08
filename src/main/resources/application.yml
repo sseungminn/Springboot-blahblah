@@ -19,12 +19,12 @@ spring:
       
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://blah-rds.cytrdvvkoauk.ap-northeast-2.rds.amazonaws.com:3307/blah?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    url: jdbc:mysql://blah-rds.cytrdvvkoauk.ap-northeast-2.rds.amazonaws.com:3307/blah?serverTimezone=Asia/Seoul
     username: blah
     password: blahblah
     
   jpa:
-#    generate-ddl: true 
+    generate-ddl: true 
     open-in-view: true
     hibernate:
       ddl-auto: update
@@ -32,9 +32,9 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       use-new-id-generator-mappings: false  #JPA가 사용하는 기본 넘버링을 사용하지 않겠다!
     show-sql: true         # sysout(sql);
-#    properties:
-#      hibernate: 
-#        dialect: org.hibernate.dialect.MySQL57InnoDBDialect
+    properties:
+      hibernate: 
+        dialect: org.hibernate.dialect.MySQL57InnoDBDialect
           
       
   jackson:
