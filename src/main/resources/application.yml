@@ -20,7 +20,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://blah-rds.cytrdvvkoauk.ap-northeast-2.rds.amazonaws.com:3307/blah?serverTimezone=Asia/Seoul
-    username: blah
+    username: blah 
     password: blahblah
     
   jpa:

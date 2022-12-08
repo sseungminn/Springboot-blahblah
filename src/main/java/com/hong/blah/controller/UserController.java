@@ -41,7 +41,8 @@ public class UserController {
 
 	private String grant_type = "authorization_code";
 	private String client_id = "2762ad5ea7e443f3f9716744680f2689";
-	private String redirect_uri = "http://localhost/auth/kakao/callback";
+//	private String redirect_uri = "http://localhost/auth/kakao/callback";
+	private String redirect_uri = "http://ec2-15-165-250-155.ap-northeast-2.compute.amazonaws.com/auth/kakao/callback";
 	
 	@Value("${hong.key}")
 	private String hongKey;

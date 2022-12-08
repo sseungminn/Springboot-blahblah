@@ -43,7 +43,7 @@ public class SwaggerConfig {
                 .globalOperationParameters(globalParamters)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.hong.blahblah.controller")) //Swagger를 적용할 클래스의 package 명
+                .apis(RequestHandlerSelectors.basePackage("com.hong.blah.controller")) //Swagger를 적용할 클래스의 package 명
                 .paths(PathSelectors.any()) //해당 package 하위에 있는 모든 url에 적용시킨다.
                 .build();
     }

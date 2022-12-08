@@ -12,7 +12,7 @@
 
 		<div class="text-center">
 			<!-- 카카오 로그인(카카오정보로 블로그 회원가입)-->
-			<a href="https://kauth.kakao.com/oauth/authorize?client_id=2762ad5ea7e443f3f9716744680f2689&redirect_uri=http://localhost/auth/kakao/callback&response_type=code"> <img height="40px"
+			<a href="https://kauth.kakao.com/oauth/authorize?client_id=2762ad5ea7e443f3f9716744680f2689&redirect_uri=http://ec2-15-165-250-155.ap-northeast-2.compute.amazonaws.com//auth/kakao/callback&response_type=code"> <img height="40px"
 				src="/image/kakao_login_medium_narrow.png" />
 			</a> <br />
 			<h1></h1>
