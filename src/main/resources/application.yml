@@ -6,9 +6,11 @@ server:
       charset: UTF-8
       enabled: true
       force: true
-  error:    include-exception: true
+  error:
+    include-exception: true
     include-stacktrace: always
-    whitelabel:      enabled: false
+    whitelabel:
+      enabled: false
 spring:
   mvc:
     view:
@@ -19,7 +21,7 @@ spring:
       
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://blah-rds.cytrdvvkoauk.ap-northeast-2.rds.amazonaws.com:3307/blah?serverTimezone=Asia/Seoul
+    url: jdbc:mysql://blah-rds.cytrdvvkoauk.ap-northeast-2.rds.amazonaws.com:3306/blah?serverTimezone=Asia/Seoul
     username: blah 
     password: blahblah
     
@@ -30,7 +32,7 @@ spring:
       ddl-auto: update
       naming: 
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-      use-new-id-generator-mappings: false  #JPA가 사용하는 기본 넘버링을 사용하지 않겠다!
+      use-new-id-generator-mappings: false  
     show-sql: true         # sysout(sql);
     properties:
       hibernate: 
@@ -50,28 +52,28 @@ spring:
     oauth2:
       client:
         registration:
-#          kakao:
-#            client-id: 2762ad5ea7e443f3f9716744680f2689
-#            client-secret: zzjUxozOlVBOmGh8WKtjAldFaityuEef
-#            client-authentication-method: post
-#            authorization-grant-type: authorization_code
-#            redirect-uri: "http://localhost/auth/kakao/callback"
-#            scope: 
-#              - profile_nickname
-#              - profile_image
-#              - account_email
-#            client-name: Kakao
+          kakao:
+            client-id: 
+            client-secret: 
+            client-authentication-method: post
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://localhost/auth/kakao/callback"
+            scope: 
+              - profile_nickname
+              - profile_image
+              - account_email
+            client-name: Kakao
             
           google:
-            client-id: 433108557163-je9i2hqt0apuqraacph9fu7gh1the3qm.apps.googleusercontent.com
-            client-secret: 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
+            client-id: 
+            client-secret: 
             scope:
             - email
             - profile
             
           naver:
-            client-id: dWX0c75H2tJJMiCKRATd
-            client-secret: bL49BJJejt
+            client-id: 
+            client-secret: 
             scope:
             - email
             - nickname
@@ -82,11 +84,11 @@ spring:
             redirect-uri: http://ec2-15-165-250-155.ap-northeast-2.compute.amazonaws.com/login/oauth2/code/naver
           
         provider: 
-#          kakao:
-#            authorization-uri: https://kauth.kakao.com/oauth/authorize
-#            token-uri: https://kauth.kakao.com/oauth/token
-#            user-info-uri: https://kapi.kakao.com/v2/user/me
-#            user-name-attribute: id
+          kakao:
+            authorization-uri: https://kauth.kakao.com/oauth/authorize
+            token-uri: https://kauth.kakao.com/oauth/token
+            user-info-uri: https://kapi.kakao.com/v2/user/me
+            user-name-attribute: id
             
           naver:
             authorization-uri: https://nid.naver.com/oauth2.0/authorize
